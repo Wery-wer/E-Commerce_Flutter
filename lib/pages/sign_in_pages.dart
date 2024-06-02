@@ -28,7 +28,6 @@ class SignInPage extends StatelessWidget {
       );
     }
 
-
     Widget emailInput(){
       return Container(
         margin: EdgeInsets.only(top: 70),
@@ -128,8 +127,62 @@ class SignInPage extends StatelessWidget {
       );
     }
 
+    Widget signInButton(){
+      return Container(
+        height: 50,
+        width: double.infinity,
+        margin: EdgeInsets.only(top:30),
+        child: TextButton(
+          onPressed: (){
+            Navigator.pushNamed(context, '/home');
+          }, 
+          style: TextButton.styleFrom(
+            backgroundColor: primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12)
+            )
+          ),
+          child: Text(
+            'Sign In',
+            style: primaryTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: medium
+            ),
+          ),
+        ),
+      );
+    }
+
+    Widget footer(){
+      return Container(
+        margin: EdgeInsets.only(bottom: 30),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Don\'t have an account? ',
+              style: subtitleTextStyle.copyWith(
+                fontSize: 12
+              ),
+            ),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, '/sign-up');
+              },
+              child: Text(
+                'Sign Up',
+                style: purpleTextStyle.copyWith(
+                  fontSize: 12
+                ),
+              ),
+            )
+        ],),
+      );
+    }
+
     return Scaffold(
         backgroundColor: backgroundColor1,
+        resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: Container(
             margin: EdgeInsets.symmetric(horizontal: defaultMargin),
@@ -138,7 +191,10 @@ class SignInPage extends StatelessWidget {
               children: [
                 header(),
                 emailInput(),
-                passwordInput()
+                passwordInput(),
+                signInButton(),
+                Spacer(),
+                footer()
               ],
             ),
           ),
