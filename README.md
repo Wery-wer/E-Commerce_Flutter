@@ -1,5 +1,2 @@
 # E-commerce Flutter
-
-<p align="center">
-  <img src="https://github.com/Wery-wer/E-Commerce_Flutter/blob/main/assets/44234831/e7b58e90-7de7-4e1c-8c56-9413c246a548.gif" width="500" height="500">
-</p>
+![progress](https://github.com/Wery-wer/E-Commerce_Flutter/assets/44234831/090f787c-d9de-4094-8c0c-f68c29d78fd3)
