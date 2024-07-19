@@ -16,6 +16,7 @@ class ChatBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     Widget productPreview(){
       return Container(
         width: 235,

@@ -23,7 +23,7 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       backgroundColor: backgroundColor1,
       body: Center(
-          child: Container(
+        child: Container(
         width: 130,
         height: 150,
         decoration: BoxDecoration(
