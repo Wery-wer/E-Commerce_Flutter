@@ -34,8 +34,7 @@ class HomePage extends StatelessWidget {
                     style: subtitleTextStyle.copyWith(
                       fontSize: 16,
                     ),
-                  ),
-              
+                  ),              
                 ],
               ),
             ),

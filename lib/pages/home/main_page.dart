@@ -16,13 +16,14 @@ class _MainPageState extends State<MainPage> {
 
   int currentIndex = 0;
 
-
   @override
   Widget build(BuildContext context) {
     
     Widget cardButton(){
       return FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.pushNamed(context, '/cart');
+        },
         backgroundColor: secondaryColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(100)
