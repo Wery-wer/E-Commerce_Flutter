@@ -7,7 +7,6 @@ class CartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     PreferredSizeWidget header(){
       return AppBar(
         backgroundColor: backgroundColor1,
@@ -153,7 +152,9 @@ class CartPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12)
                   )
                 ),
-                onPressed:(){}, 
+                onPressed:(){
+                  Navigator.pushNamed(context, '/checkout');
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
