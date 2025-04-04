@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shamo_apps/pages/home/main_page.dart';
 import 'package:shamo_apps/themes/themes.dart';
 import 'package:shamo_apps/widgets/cart_card.dart';
 
@@ -28,8 +29,12 @@ class CartPage extends StatelessWidget {
                   color: primaryTextColor,
                 ),
                 onPressed: (){
-                Navigator.pop(context);
-              },
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MainPage()),
+                  );
+
+                },
             ),
           ),
       );
